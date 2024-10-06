@@ -1,14 +1,27 @@
-<!-- Import the component -->
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-
-<!-- Use it like any other HTML element -->
-<model-viewer 
-    alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
-    src="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/final.glb" 
-    ar 
-    poster="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/logo.jpg" 
-    shadow-intensity="1" 
-    camera-controls 
-    touch-action="pan-y" 
-    style="width: 100%; height: 600px;">
-</model-viewer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Viewer Example</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <style>
+        /* Optional: Fullscreen the model viewer */
+        model-viewer {
+            width: 100%;
+            height: 100vh; /* Full height on mobile */
+        }
+    </style>
+</head>
+<body>
+    <model-viewer 
+        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
+        src="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/final.glb" 
+        ar 
+        poster="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/logo.jpg" 
+        shadow-intensity="1" 
+        camera-controls 
+        touch-action="pan-y">
+    </model-viewer>
+</body>
+</html>
