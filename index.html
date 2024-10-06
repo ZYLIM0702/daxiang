@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model Viewer Example</title>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <style>
@@ -13,6 +13,14 @@
         model-viewer {
             width: 100%; /* Full width */
             height: 100vh; /* Full height of the viewport */
+        }
+        /* Style for the AR button */
+        model-viewer::part(ar-button) {
+            position: absolute; /* Position it absolutely */
+            bottom: 20px; /* Adjust the distance from the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Centering */
+            z-index: 10; /* Ensure it's above other elements */
         }
     </style>
 </head>
