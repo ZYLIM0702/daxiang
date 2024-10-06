@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAXIANG 19 BOOTH</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/aframevr/aframe-arlib/master/dist/aframe-ar.js"></script>
-    <style>
-        body { margin: 0; }
-        canvas { display: none; }
-    </style>
-</head>
-<body>
-    <a-scene embedded arjs>
-        <a-marker preset="hiro">
-            <!-- Replace 'YOUR_MODEL_URL_HERE' with the URL of your GLTF model -->
-            <a-entity gltf-model="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/final.glb" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
-    </a-scene>
-</body>
-</html>
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+<!-- Use it like any other HTML element -->
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/final.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/logo.jpg" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
