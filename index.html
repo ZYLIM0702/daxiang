@@ -1,43 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Viewer Example</title>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-    <style>
-        body {
-            margin: 0; /* Remove default margin */
-            overflow: hidden; /* Prevent scrolling */
-            position: relative; /* Set positioning context for absolute elements */
-        }
-        model-viewer {
-            width: 100%; /* Full width */
-            height: 100vh; /* Full height of the viewport */
-            position: relative; /* Ensure it can contain absolutely positioned elements */
-        }
-        /* Style for the AR button */
-        model-viewer::part(ar-button) {
-            position: absolute; /* Position it absolutely */
-            bottom: 20px; /* Adjust the distance from the bottom */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Centering */
-            z-index: 100; /* Ensure it's above other elements */
-            background-color: rgba(255, 255, 255, 0.8); /* Optional: Add background for visibility */
-            border-radius: 4px; /* Optional: Rounded corners */
-            padding: 10px; /* Optional: Add some padding */
-        }
-    </style>
-</head>
-<body>
-    <model-viewer 
-        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
-        src="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/final.glb" 
-        ar 
-        poster="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/logo.jpg" 
-        shadow-intensity="1" 
-        camera-controls 
-        touch-action="pan-y"
-    ></model-viewer>
-</body>
-</html>
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+<!-- Use it like any other HTML element -->
+<model-viewer 
+    alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
+    src="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/final.glb" 
+    ar 
+    poster="https://raw.githubusercontent.com/ZYLIM0702/daxiang/refs/heads/main/logo.jpg" 
+    shadow-intensity="1" 
+    camera-controls 
+    touch-action="pan-y" 
+    style="width: 100%; height: 600px;">
+</model-viewer>
